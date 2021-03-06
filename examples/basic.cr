@@ -1,16 +1,19 @@
 require "../src/google_spreadsheets.cr"
 require "./credentials.cr"
+include GoogleSpreadsheets
 
-spreadsheet = GoogleSpreadsheets::Spreadsheet.new(
+spreadsheet = Spreadsheet.new(
   id: ID,
-  api_key: API_KEY
+  api_key: API_KEY,
+  token: ACCESS_TOKEN
 )
+
 sheet = spreadsheet.sheet("Sheet1")
 
-sheet.get("a1:b10", GoogleSpreadsheets::MajorDimensions::Rows).each do |row|
-  row.each do |el|
-    print el
-  end
-end
+pp sheet.get("a1:b10")
+
+pp sheet.batchGet(["a1:a10", "b1:b10"])
 
 pp sheet.append({"name" => "Joe", "age" => 10})
+sheet.update("a6", [[12]])
+sheet.clear("a6:b6")
