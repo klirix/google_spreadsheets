@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="main-dev">
+<meta name="crystal_docs.project_name" content="google_spreadsheets">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="google_spreadsheets">
+  <title>GoogleSpreadsheets::GridRange - google_spreadsheets main-dev</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          google_spreadsheets
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main-dev
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="google_spreadsheets/GoogleSpreadsheets" data-name="googlespreadsheets">
+      <a href="../GoogleSpreadsheets.html">GoogleSpreadsheets</a>
+      
+        <ul>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/AuthException" data-name="googlespreadsheets::authexception">
+      <a href="../GoogleSpreadsheets/AuthException.html">AuthException</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/CellInput" data-name="googlespreadsheets::cellinput">
+      <a href="../GoogleSpreadsheets/CellInput.html">CellInput</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/DataFilter" data-name="googlespreadsheets::datafilter">
+      <a href="../GoogleSpreadsheets/DataFilter.html">DataFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/DataFilterValueRange" data-name="googlespreadsheets::datafiltervaluerange">
+      <a href="../GoogleSpreadsheets/DataFilterValueRange.html">DataFilterValueRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/GridProperties" data-name="googlespreadsheets::gridproperties">
+      <a href="../GoogleSpreadsheets/GridProperties.html">GridProperties</a>
+      
+    </li>
+  
+  <li class=" current" data-id="google_spreadsheets/GoogleSpreadsheets/GridRange" data-name="googlespreadsheets::gridrange">
+      <a href="../GoogleSpreadsheets/GridRange.html">GridRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/GridRangeDataFilter" data-name="googlespreadsheets::gridrangedatafilter">
+      <a href="../GoogleSpreadsheets/GridRangeDataFilter.html">GridRangeDataFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/MajorDimension" data-name="googlespreadsheets::majordimension">
+      <a href="../GoogleSpreadsheets/MajorDimension.html">MajorDimension</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/MatchedValueRange" data-name="googlespreadsheets::matchedvaluerange">
+      <a href="../GoogleSpreadsheets/MatchedValueRange.html">MatchedValueRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/RangeDataFilter" data-name="googlespreadsheets::rangedatafilter">
+      <a href="../GoogleSpreadsheets/RangeDataFilter.html">RangeDataFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/SheetRow" data-name="googlespreadsheets::sheetrow">
+      <a href="../GoogleSpreadsheets/SheetRow.html">SheetRow</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/Spreadsheet" data-name="googlespreadsheets::spreadsheet">
+      <a href="../GoogleSpreadsheets/Spreadsheet.html">Spreadsheet</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/UpdateValuesByDataFilterResponse" data-name="googlespreadsheets::updatevaluesbydatafilterresponse">
+      <a href="../GoogleSpreadsheets/UpdateValuesByDataFilterResponse.html">UpdateValuesByDataFilterResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/UpdateValuesResponse" data-name="googlespreadsheets::updatevaluesresponse">
+      <a href="../GoogleSpreadsheets/UpdateValuesResponse.html">UpdateValuesResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/ValueInputOption" data-name="googlespreadsheets::valueinputoption">
+      <a href="../GoogleSpreadsheets/ValueInputOption.html">ValueInputOption</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/ValueRange" data-name="googlespreadsheets::valuerange">
+      <a href="../GoogleSpreadsheets/ValueRange.html">ValueRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/ValueRangeData" data-name="googlespreadsheets::valuerangedata">
+      <a href="../GoogleSpreadsheets/ValueRangeData.html">ValueRangeData</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/Worksheet" data-name="googlespreadsheets::worksheet">
+      <a href="../GoogleSpreadsheets/Worksheet.html">Worksheet</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> GoogleSpreadsheets::GridRange
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../GoogleSpreadsheets/GridRange.html">GoogleSpreadsheets::GridRange</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type">JSON::Serializable</li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(sheetId,startRowIndex,endRowIndex,startColumnIndex,endColumnIndex)-class-method" class="signature"><strong>.new</strong>(sheetId, startRowIndex, endRowIndex, startColumnIndex, endColumnIndex)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new(pull:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(sheetId,startRowIndex,endRowIndex,startColumnIndex,endColumnIndex)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(sheetId, startRowIndex, endRowIndex, startColumnIndex, endColumnIndex)
+
+        <a class="method-permalink" href="#new(sheetId,startRowIndex,endRowIndex,startColumnIndex,endColumnIndex)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(pull : JSON::PullParser)
+
+        <a class="method-permalink" href="#new(pull:JSON::PullParser)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

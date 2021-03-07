@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="main-dev">
+<meta name="crystal_docs.project_name" content="google_spreadsheets">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="google_spreadsheets">
+  <title>GoogleSpreadsheets::Worksheet - google_spreadsheets main-dev</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          google_spreadsheets
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main-dev
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="google_spreadsheets/GoogleSpreadsheets" data-name="googlespreadsheets">
+      <a href="../GoogleSpreadsheets.html">GoogleSpreadsheets</a>
+      
+        <ul>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/AuthException" data-name="googlespreadsheets::authexception">
+      <a href="../GoogleSpreadsheets/AuthException.html">AuthException</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/CellInput" data-name="googlespreadsheets::cellinput">
+      <a href="../GoogleSpreadsheets/CellInput.html">CellInput</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/DataFilter" data-name="googlespreadsheets::datafilter">
+      <a href="../GoogleSpreadsheets/DataFilter.html">DataFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/DataFilterValueRange" data-name="googlespreadsheets::datafiltervaluerange">
+      <a href="../GoogleSpreadsheets/DataFilterValueRange.html">DataFilterValueRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/GridProperties" data-name="googlespreadsheets::gridproperties">
+      <a href="../GoogleSpreadsheets/GridProperties.html">GridProperties</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/GridRange" data-name="googlespreadsheets::gridrange">
+      <a href="../GoogleSpreadsheets/GridRange.html">GridRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/GridRangeDataFilter" data-name="googlespreadsheets::gridrangedatafilter">
+      <a href="../GoogleSpreadsheets/GridRangeDataFilter.html">GridRangeDataFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/MajorDimension" data-name="googlespreadsheets::majordimension">
+      <a href="../GoogleSpreadsheets/MajorDimension.html">MajorDimension</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/MatchedValueRange" data-name="googlespreadsheets::matchedvaluerange">
+      <a href="../GoogleSpreadsheets/MatchedValueRange.html">MatchedValueRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/RangeDataFilter" data-name="googlespreadsheets::rangedatafilter">
+      <a href="../GoogleSpreadsheets/RangeDataFilter.html">RangeDataFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/SheetRow" data-name="googlespreadsheets::sheetrow">
+      <a href="../GoogleSpreadsheets/SheetRow.html">SheetRow</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/Spreadsheet" data-name="googlespreadsheets::spreadsheet">
+      <a href="../GoogleSpreadsheets/Spreadsheet.html">Spreadsheet</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/UpdateValuesByDataFilterResponse" data-name="googlespreadsheets::updatevaluesbydatafilterresponse">
+      <a href="../GoogleSpreadsheets/UpdateValuesByDataFilterResponse.html">UpdateValuesByDataFilterResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/UpdateValuesResponse" data-name="googlespreadsheets::updatevaluesresponse">
+      <a href="../GoogleSpreadsheets/UpdateValuesResponse.html">UpdateValuesResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/ValueInputOption" data-name="googlespreadsheets::valueinputoption">
+      <a href="../GoogleSpreadsheets/ValueInputOption.html">ValueInputOption</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/ValueRange" data-name="googlespreadsheets::valuerange">
+      <a href="../GoogleSpreadsheets/ValueRange.html">ValueRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="google_spreadsheets/GoogleSpreadsheets/ValueRangeData" data-name="googlespreadsheets::valuerangedata">
+      <a href="../GoogleSpreadsheets/ValueRangeData.html">ValueRangeData</a>
+      
+    </li>
+  
+  <li class=" current" data-id="google_spreadsheets/GoogleSpreadsheets/Worksheet" data-name="googlespreadsheets::worksheet">
+      <a href="../GoogleSpreadsheets/Worksheet.html">Worksheet</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> GoogleSpreadsheets::Worksheet
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../GoogleSpreadsheets/Worksheet.html">GoogleSpreadsheets::Worksheet</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(id,title,index,sheet_type,spreadsheet,properties)-class-method" class="signature"><strong>.new</strong>(id, title, index, sheet_type, spreadsheet, properties)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#from_json(spreadsheet,data:JSON::Any)-class-method" class="signature"><strong>.from_json</strong>(spreadsheet, data : JSON::Any)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#append(data,range:String=&quot;A1&quot;,major_dimension=MajorDimension::ROWS)-instance-method" class="signature"><strong>#append</strong>(data, range : String = <span class="s">&quot;A1&quot;</span>, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#append(data:Hash(String,CellInput),range:String=&quot;A1&quot;)-instance-method" class="signature"><strong>#append</strong>(data : Hash(String, CellInput), range : String = <span class="s">&quot;A1&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#before_reading-instance-method" class="signature"><strong>#before_reading</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#before_updating-instance-method" class="signature"><strong>#before_updating</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear(data_filters:Array(DataFilter))-instance-method" class="signature"><strong>#clear</strong>(data_filters : Array(DataFilter))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear(ranges:Array(String))-instance-method" class="signature"><strong>#clear</strong>(ranges : Array(String))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear(range:String)-instance-method" class="signature"><strong>#clear</strong>(range : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#column_to_letters(column:Int32)-instance-method" class="signature"><strong>#column_to_letters</strong>(column : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get(filters:Array(DataFilter),major_dimension=MajorDimension::ROWS)-instance-method" class="signature"><strong>#get</strong>(filters : Array(DataFilter), major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get(ranges:Array(String),major_dimension=MajorDimension::ROWS)-instance-method" class="signature"><strong>#get</strong>(ranges : Array(String), major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get(range,major_dimension=MajorDimension::ROWS)-instance-method" class="signature"><strong>#get</strong>(range, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id:Int64-instance-method" class="signature"><strong>#id</strong> : Int64</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id=(id:Int64)-instance-method" class="signature"><strong>#id=</strong>(id : Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#index:Int32-instance-method" class="signature"><strong>#index</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#index=(index:Int32)-instance-method" class="signature"><strong>#index=</strong>(index : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sheet_type:String-instance-method" class="signature"><strong>#sheet_type</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sheet_type=(sheet_type:String)-instance-method" class="signature"><strong>#sheet_type=</strong>(sheet_type : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#spreadsheet:Spreadsheet-instance-method" class="signature"><strong>#spreadsheet</strong> : Spreadsheet</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#spreadsheet=(spreadsheet:Spreadsheet)-instance-method" class="signature"><strong>#spreadsheet=</strong>(spreadsheet : Spreadsheet)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#title:String-instance-method" class="signature"><strong>#title</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#title=(title:String)-instance-method" class="signature"><strong>#title=</strong>(title : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#titles(range:String)-instance-method" class="signature"><strong>#titles</strong>(range : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update(range,data,*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method" class="signature"><strong>#update</strong>(range, data, *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update(value_range:ValueRange,*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method" class="signature"><strong>#update</strong>(value_range : ValueRange, *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update(value_ranges:Array(ValueRange),*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method" class="signature"><strong>#update</strong>(value_ranges : Array(ValueRange), *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update(value_ranges:Array(DataFilterValueRange),*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method" class="signature"><strong>#update</strong>(value_ranges : Array(DataFilterValueRange), *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(id,title,index,sheet_type,spreadsheet,properties)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(id, title, index, sheet_type, spreadsheet, properties)
+
+        <a class="method-permalink" href="#new(id,title,index,sheet_type,spreadsheet,properties)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="from_json(spreadsheet,data:JSON::Any)-class-method">
+      <div class="signature">
+        
+        def self.<strong>from_json</strong>(spreadsheet, data : JSON::Any)
+
+        <a class="method-permalink" href="#from_json(spreadsheet,data:JSON::Any)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="append(data,range:String=&quot;A1&quot;,major_dimension=MajorDimension::ROWS)-instance-method">
+      <div class="signature">
+        
+        def <strong>append</strong>(data, range : String = <span class="s">&quot;A1&quot;</span>, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)
+
+        <a class="method-permalink" href="#append(data,range:String=&quot;A1&quot;,major_dimension=MajorDimension::ROWS)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="append(data:Hash(String,CellInput),range:String=&quot;A1&quot;)-instance-method">
+      <div class="signature">
+        
+        def <strong>append</strong>(data : Hash(String, <a href="../GoogleSpreadsheets/CellInput.html">CellInput</a>), range : String = <span class="s">&quot;A1&quot;</span>)
+
+        <a class="method-permalink" href="#append(data:Hash(String,CellInput),range:String=&quot;A1&quot;)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="before_reading-instance-method">
+      <div class="signature">
+        
+        def <strong>before_reading</strong>
+
+        <a class="method-permalink" href="#before_reading-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="before_updating-instance-method">
+      <div class="signature">
+        
+        def <strong>before_updating</strong>
+
+        <a class="method-permalink" href="#before_updating-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear(data_filters:Array(DataFilter))-instance-method">
+      <div class="signature">
+        
+        def <strong>clear</strong>(data_filters : Array(<a href="../GoogleSpreadsheets/DataFilter.html">DataFilter</a>))
+
+        <a class="method-permalink" href="#clear(data_filters:Array(DataFilter))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear(ranges:Array(String))-instance-method">
+      <div class="signature">
+        
+        def <strong>clear</strong>(ranges : Array(String))
+
+        <a class="method-permalink" href="#clear(ranges:Array(String))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear(range:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>clear</strong>(range : String)
+
+        <a class="method-permalink" href="#clear(range:String)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="column_to_letters(column:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>column_to_letters</strong>(column : Int32)
+
+        <a class="method-permalink" href="#column_to_letters(column:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(filters:Array(DataFilter),major_dimension=MajorDimension::ROWS)-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(filters : Array(<a href="../GoogleSpreadsheets/DataFilter.html">DataFilter</a>), major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)
+
+        <a class="method-permalink" href="#get(filters:Array(DataFilter),major_dimension=MajorDimension::ROWS)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(ranges:Array(String),major_dimension=MajorDimension::ROWS)-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(ranges : Array(String), major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)
+
+        <a class="method-permalink" href="#get(ranges:Array(String),major_dimension=MajorDimension::ROWS)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get(range,major_dimension=MajorDimension::ROWS)-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(range, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>)
+
+        <a class="method-permalink" href="#get(range,major_dimension=MajorDimension::ROWS)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>id</strong> : Int64
+
+        <a class="method-permalink" href="#id:Int64-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id=(id:Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>id=</strong>(id : Int64)
+
+        <a class="method-permalink" href="#id=(id:Int64)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="index:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>index</strong> : Int32
+
+        <a class="method-permalink" href="#index:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="index=(index:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>index=</strong>(index : Int32)
+
+        <a class="method-permalink" href="#index=(index:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sheet_type:String-instance-method">
+      <div class="signature">
+        
+        def <strong>sheet_type</strong> : String
+
+        <a class="method-permalink" href="#sheet_type:String-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sheet_type=(sheet_type:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>sheet_type=</strong>(sheet_type : String)
+
+        <a class="method-permalink" href="#sheet_type=(sheet_type:String)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="spreadsheet:Spreadsheet-instance-method">
+      <div class="signature">
+        
+        def <strong>spreadsheet</strong> : <a href="../GoogleSpreadsheets/Spreadsheet.html">Spreadsheet</a>
+
+        <a class="method-permalink" href="#spreadsheet:Spreadsheet-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="spreadsheet=(spreadsheet:Spreadsheet)-instance-method">
+      <div class="signature">
+        
+        def <strong>spreadsheet=</strong>(spreadsheet : <a href="../GoogleSpreadsheets/Spreadsheet.html">Spreadsheet</a>)
+
+        <a class="method-permalink" href="#spreadsheet=(spreadsheet:Spreadsheet)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="title:String-instance-method">
+      <div class="signature">
+        
+        def <strong>title</strong> : String
+
+        <a class="method-permalink" href="#title:String-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="title=(title:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>title=</strong>(title : String)
+
+        <a class="method-permalink" href="#title=(title:String)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="titles(range:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>titles</strong>(range : String)
+
+        <a class="method-permalink" href="#titles(range:String)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update(range,data,*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">
+      <div class="signature">
+        
+        def <strong>update</strong>(range, data, *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)
+
+        <a class="method-permalink" href="#update(range,data,*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update(value_range:ValueRange,*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">
+      <div class="signature">
+        
+        def <strong>update</strong>(value_range : <a href="../GoogleSpreadsheets/ValueRange.html">ValueRange</a>, *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)
+
+        <a class="method-permalink" href="#update(value_range:ValueRange,*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update(value_ranges:Array(ValueRange),*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">
+      <div class="signature">
+        
+        def <strong>update</strong>(value_ranges : Array(<a href="../GoogleSpreadsheets/ValueRange.html">ValueRange</a>), *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)
+
+        <a class="method-permalink" href="#update(value_ranges:Array(ValueRange),*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update(value_ranges:Array(DataFilterValueRange),*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">
+      <div class="signature">
+        
+        def <strong>update</strong>(value_ranges : Array(<a href="../GoogleSpreadsheets/DataFilterValueRange.html">DataFilterValueRange</a>), *, major_dimension = <span class="t">MajorDimension</span><span class="t">::</span><span class="t">ROWS</span>, value_input_option = <span class="t">ValueInputOption</span><span class="t">::</span><span class="t">USER_ENTERED</span>)
+
+        <a class="method-permalink" href="#update(value_ranges:Array(DataFilterValueRange),*,major_dimension=MajorDimension::ROWS,value_input_option=ValueInputOption::USER_ENTERED)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
