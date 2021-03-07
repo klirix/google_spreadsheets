@@ -1,6 +1,6 @@
 # google_spreadsheets
 
-TODO: Write a description here
+## Google Spreadsheets Api v4 in Crystal
 
 ## Installation
 
@@ -18,13 +18,12 @@ TODO: Write a description here
 
 ```crystal
 require "google_spreadsheets"
+include GoogleSpreadsheets
 ```
-
-TODO: Write usage instructions here
 
 ## Development
 
-TODO: Write development instructions here
+Fill `./examples/credentials.cr` with your data including API_KEY, ACCESS_TOKEN and ID, code will pick it up automatically
 
 ## Contributing
 
